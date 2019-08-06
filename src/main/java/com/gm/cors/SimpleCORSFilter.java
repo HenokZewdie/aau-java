@@ -1,4 +1,4 @@
-package com.studentRegistrar.aau.cors;
+package com.gm.cors;
 
 import java.io.IOException;
 import javax.servlet.Filter;

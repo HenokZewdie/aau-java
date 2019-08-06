@@ -1,4 +1,4 @@
-package com.studentRegistrar.aau.cors;
+package com.gm.cors;
 
 
 import org.springframework.context.annotation.Bean;
@@ -10,7 +10,7 @@ import org.springframework.data.mongodb.repository.config.EnableMongoRepositorie
 
 import com.mongodb.MongoClient;
 
-@EnableMongoRepositories(basePackages = "com.studentRegistrar.aau.repo")
+@EnableMongoRepositories(basePackages = "com.gm.repo")
 @Configuration
 public class MongoDBConfig {
 
@@ -25,7 +25,7 @@ public class MongoDBConfig {
 	@Bean
     public MongoDbFactory mongoDbFactory() throws Exception {
         MongoClient mongoClient = new MongoClient("localhost", 27017);
-        return new SimpleMongoDbFactory(mongoClient, "AAUDB");
+        return new SimpleMongoDbFactory(mongoClient, "AccountBillingInformation");
     }
  
     @Bean
